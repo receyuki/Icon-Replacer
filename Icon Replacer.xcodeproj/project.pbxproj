@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1243291225740731007DF90B /* Icon_ReplacerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243291125740731007DF90B /* Icon_ReplacerApp.swift */; };
+		1243291425740731007DF90B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243291325740731007DF90B /* ContentView.swift */; };
+		1243291625740733007DF90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1243291525740733007DF90B /* Assets.xcassets */; };
+		1243291925740733007DF90B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1243291825740733007DF90B /* Preview Assets.xcassets */; };
+		1243292525740733007DF90B /* Icon_ReplacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243292425740733007DF90B /* Icon_ReplacerTests.swift */; };
+		1243293025740733007DF90B /* Icon_ReplacerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243292F25740733007DF90B /* Icon_ReplacerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1243292125740733007DF90B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1243290625740731007DF90B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1243290D25740731007DF90B;
+			remoteInfo = "Icon Replacer";
+		};
+		1243292C25740733007DF90B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1243290625740731007DF90B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1243290D25740731007DF90B;
+			remoteInfo = "Icon Replacer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1243290E25740731007DF90B /* Icon Replacer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Icon Replacer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1243291125740731007DF90B /* Icon_ReplacerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon_ReplacerApp.swift; sourceTree = "<group>"; };
+		1243291325740731007DF90B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1243291525740733007DF90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1243291825740733007DF90B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1243291A25740733007DF90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1243291B25740733007DF90B /* Icon_Replacer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Icon_Replacer.entitlements; sourceTree = "<group>"; };
+		1243292025740733007DF90B /* Icon ReplacerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Icon ReplacerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1243292425740733007DF90B /* Icon_ReplacerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon_ReplacerTests.swift; sourceTree = "<group>"; };
+		1243292625740733007DF90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1243292B25740733007DF90B /* Icon ReplacerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Icon ReplacerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1243292F25740733007DF90B /* Icon_ReplacerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon_ReplacerUITests.swift; sourceTree = "<group>"; };
+		1243293125740733007DF90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1243290B25740731007DF90B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1243291D25740733007DF90B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1243292825740733007DF90B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1243290525740731007DF90B = {
+			isa = PBXGroup;
+			children = (
+				1243291025740731007DF90B /* Icon Replacer */,
+				1243292325740733007DF90B /* Icon ReplacerTests */,
+				1243292E25740733007DF90B /* Icon ReplacerUITests */,
+				1243290F25740731007DF90B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1243290F25740731007DF90B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1243290E25740731007DF90B /* Icon Replacer.app */,
+				1243292025740733007DF90B /* Icon ReplacerTests.xctest */,
+				1243292B25740733007DF90B /* Icon ReplacerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1243291025740731007DF90B /* Icon Replacer */ = {
+			isa = PBXGroup;
+			children = (
+				1243291125740731007DF90B /* Icon_ReplacerApp.swift */,
+				1243291325740731007DF90B /* ContentView.swift */,
+				1243291525740733007DF90B /* Assets.xcassets */,
+				1243291A25740733007DF90B /* Info.plist */,
+				1243291B25740733007DF90B /* Icon_Replacer.entitlements */,
+				1243291725740733007DF90B /* Preview Content */,
+			);
+			path = "Icon Replacer";
+			sourceTree = "<group>";
+		};
+		1243291725740733007DF90B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1243291825740733007DF90B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1243292325740733007DF90B /* Icon ReplacerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1243292425740733007DF90B /* Icon_ReplacerTests.swift */,
+				1243292625740733007DF90B /* Info.plist */,
+			);
+			path = "Icon ReplacerTests";
+			sourceTree = "<group>";
+		};
+		1243292E25740733007DF90B /* Icon ReplacerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1243292F25740733007DF90B /* Icon_ReplacerUITests.swift */,
+				1243293125740733007DF90B /* Info.plist */,
+			);
+			path = "Icon ReplacerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1243290D25740731007DF90B /* Icon Replacer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1243293425740733007DF90B /* Build configuration list for PBXNativeTarget "Icon Replacer" */;
+			buildPhases = (
+				1243290A25740731007DF90B /* Sources */,
+				1243290B25740731007DF90B /* Frameworks */,
+				1243290C25740731007DF90B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Icon Replacer";
+			productName = "Icon Replacer";
+			productReference = 1243290E25740731007DF90B /* Icon Replacer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1243291F25740733007DF90B /* Icon ReplacerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1243293725740733007DF90B /* Build configuration list for PBXNativeTarget "Icon ReplacerTests" */;
+			buildPhases = (
+				1243291C25740733007DF90B /* Sources */,
+				1243291D25740733007DF90B /* Frameworks */,
+				1243291E25740733007DF90B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1243292225740733007DF90B /* PBXTargetDependency */,
+			);
+			name = "Icon ReplacerTests";
+			productName = "Icon ReplacerTests";
+			productReference = 1243292025740733007DF90B /* Icon ReplacerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1243292A25740733007DF90B /* Icon ReplacerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1243293A25740733007DF90B /* Build configuration list for PBXNativeTarget "Icon ReplacerUITests" */;
+			buildPhases = (
+				1243292725740733007DF90B /* Sources */,
+				1243292825740733007DF90B /* Frameworks */,
+				1243292925740733007DF90B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1243292D25740733007DF90B /* PBXTargetDependency */,
+			);
+			name = "Icon ReplacerUITests";
+			productName = "Icon ReplacerUITests";
+			productReference = 1243292B25740733007DF90B /* Icon ReplacerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1243290625740731007DF90B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1243290D25740731007DF90B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1243291F25740733007DF90B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1243290D25740731007DF90B;
+					};
+					1243292A25740733007DF90B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1243290D25740731007DF90B;
+					};
+				};
+			};
+			buildConfigurationList = 1243290925740731007DF90B /* Build configuration list for PBXProject "Icon Replacer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1243290525740731007DF90B;
+			productRefGroup = 1243290F25740731007DF90B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1243290D25740731007DF90B /* Icon Replacer */,
+				1243291F25740733007DF90B /* Icon ReplacerTests */,
+				1243292A25740733007DF90B /* Icon ReplacerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1243290C25740731007DF90B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1243291925740733007DF90B /* Preview Assets.xcassets in Resources */,
+				1243291625740733007DF90B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1243291E25740733007DF90B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1243292925740733007DF90B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1243290A25740731007DF90B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1243291425740731007DF90B /* ContentView.swift in Sources */,
+				1243291225740731007DF90B /* Icon_ReplacerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1243291C25740733007DF90B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1243292525740733007DF90B /* Icon_ReplacerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1243292725740733007DF90B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1243293025740733007DF90B /* Icon_ReplacerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1243292225740733007DF90B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1243290D25740731007DF90B /* Icon Replacer */;
+			targetProxy = 1243292125740733007DF90B /* PBXContainerItemProxy */;
+		};
+		1243292D25740733007DF90B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1243290D25740731007DF90B /* Icon Replacer */;
+			targetProxy = 1243292C25740733007DF90B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1243293225740733007DF90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1243293325740733007DF90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1243293525740733007DF90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Icon Replacer/Icon_Replacer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Icon Replacer/Preview Content\"";
+				DEVELOPMENT_TEAM = KD7HMJNUVE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Icon Replacer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-Replacer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1243293625740733007DF90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Icon Replacer/Icon_Replacer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Icon Replacer/Preview Content\"";
+				DEVELOPMENT_TEAM = KD7HMJNUVE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Icon Replacer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-Replacer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1243293825740733007DF90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KD7HMJNUVE;
+				INFOPLIST_FILE = "Icon ReplacerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-ReplacerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Icon Replacer.app/Contents/MacOS/Icon Replacer";
+			};
+			name = Debug;
+		};
+		1243293925740733007DF90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KD7HMJNUVE;
+				INFOPLIST_FILE = "Icon ReplacerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-ReplacerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Icon Replacer.app/Contents/MacOS/Icon Replacer";
+			};
+			name = Release;
+		};
+		1243293B25740733007DF90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KD7HMJNUVE;
+				INFOPLIST_FILE = "Icon ReplacerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-ReplacerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Icon Replacer";
+			};
+			name = Debug;
+		};
+		1243293C25740733007DF90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KD7HMJNUVE;
+				INFOPLIST_FILE = "Icon ReplacerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-ReplacerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Icon Replacer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1243290925740731007DF90B /* Build configuration list for PBXProject "Icon Replacer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1243293225740733007DF90B /* Debug */,
+				1243293325740733007DF90B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1243293425740733007DF90B /* Build configuration list for PBXNativeTarget "Icon Replacer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1243293525740733007DF90B /* Debug */,
+				1243293625740733007DF90B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1243293725740733007DF90B /* Build configuration list for PBXNativeTarget "Icon ReplacerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1243293825740733007DF90B /* Debug */,
+				1243293925740733007DF90B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1243293A25740733007DF90B /* Build configuration list for PBXNativeTarget "Icon ReplacerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1243293B25740733007DF90B /* Debug */,
+				1243293C25740733007DF90B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1243290625740731007DF90B /* Project object */;
+}
