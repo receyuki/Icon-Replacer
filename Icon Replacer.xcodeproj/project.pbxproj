@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121A4FFC257582C50091F978 /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121A4FFB257582C50091F978 /* AppLoader.swift */; };
 		1243291225740731007DF90B /* Icon_ReplacerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243291125740731007DF90B /* Icon_ReplacerApp.swift */; };
 		1243291425740731007DF90B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243291325740731007DF90B /* ContentView.swift */; };
 		1243291625740733007DF90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1243291525740733007DF90B /* Assets.xcassets */; };
 		1243291925740733007DF90B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1243291825740733007DF90B /* Preview Assets.xcassets */; };
 		1243292525740733007DF90B /* Icon_ReplacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243292425740733007DF90B /* Icon_ReplacerTests.swift */; };
 		1243293025740733007DF90B /* Icon_ReplacerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243292F25740733007DF90B /* Icon_ReplacerUITests.swift */; };
+		12BD1E052575392300CD8627 /* TabAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E042575392300CD8627 /* TabAView.swift */; };
+		12BD1E0A2575395C00CD8627 /* TabBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E092575395C00CD8627 /* TabBView.swift */; };
+		12BD1E0F257539C600CD8627 /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E0E257539C600CD8627 /* AppList.swift */; };
+		12BD1E1425753A0000CD8627 /* AppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E1325753A0000CD8627 /* AppRow.swift */; };
+		12BD1E1925753A5F00CD8627 /* AppProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E1825753A5F00CD8627 /* AppProfile.swift */; };
+		12BD1E1E25753F3C00CD8627 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E1D25753F3C00CD8627 /* AppData.swift */; };
+		12BD1E2625754C5100CD8627 /* AppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E2525754C5100CD8627 /* AppDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		121A4FFB257582C50091F978 /* AppLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
 		1243290E25740731007DF90B /* Icon Replacer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Icon Replacer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1243291125740731007DF90B /* Icon_ReplacerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon_ReplacerApp.swift; sourceTree = "<group>"; };
 		1243291325740731007DF90B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +55,13 @@
 		1243292B25740733007DF90B /* Icon ReplacerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Icon ReplacerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1243292F25740733007DF90B /* Icon_ReplacerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon_ReplacerUITests.swift; sourceTree = "<group>"; };
 		1243293125740733007DF90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12BD1E042575392300CD8627 /* TabAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAView.swift; sourceTree = "<group>"; };
+		12BD1E092575395C00CD8627 /* TabBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBView.swift; sourceTree = "<group>"; };
+		12BD1E0E257539C600CD8627 /* AppList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppList.swift; sourceTree = "<group>"; };
+		12BD1E1325753A0000CD8627 /* AppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRow.swift; sourceTree = "<group>"; };
+		12BD1E1825753A5F00CD8627 /* AppProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProfile.swift; sourceTree = "<group>"; };
+		12BD1E1D25753F3C00CD8627 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		12BD1E2525754C5100CD8627 /* AppDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +114,18 @@
 			children = (
 				1243291125740731007DF90B /* Icon_ReplacerApp.swift */,
 				1243291325740731007DF90B /* ContentView.swift */,
+				12BD1E092575395C00CD8627 /* TabBView.swift */,
+				12BD1E042575392300CD8627 /* TabAView.swift */,
+				12BD1E0E257539C600CD8627 /* AppList.swift */,
+				12BD1E2525754C5100CD8627 /* AppDetail.swift */,
+				12BD1E1325753A0000CD8627 /* AppRow.swift */,
 				1243291525740733007DF90B /* Assets.xcassets */,
 				1243291A25740733007DF90B /* Info.plist */,
 				1243291B25740733007DF90B /* Icon_Replacer.entitlements */,
 				1243291725740733007DF90B /* Preview Content */,
+				12BD1E1825753A5F00CD8627 /* AppProfile.swift */,
+				12BD1E1D25753F3C00CD8627 /* AppData.swift */,
+				121A4FFB257582C50091F978 /* AppLoader.swift */,
 			);
 			path = "Icon Replacer";
 			sourceTree = "<group>";
@@ -261,8 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12BD1E2625754C5100CD8627 /* AppDetail.swift in Sources */,
+				12BD1E1425753A0000CD8627 /* AppRow.swift in Sources */,
 				1243291425740731007DF90B /* ContentView.swift in Sources */,
+				12BD1E0A2575395C00CD8627 /* TabBView.swift in Sources */,
+				12BD1E1E25753F3C00CD8627 /* AppData.swift in Sources */,
 				1243291225740731007DF90B /* Icon_ReplacerApp.swift in Sources */,
+				12BD1E0F257539C600CD8627 /* AppList.swift in Sources */,
+				12BD1E1925753A5F00CD8627 /* AppProfile.swift in Sources */,
+				121A4FFC257582C50091F978 /* AppLoader.swift in Sources */,
+				12BD1E052575392300CD8627 /* TabAView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
