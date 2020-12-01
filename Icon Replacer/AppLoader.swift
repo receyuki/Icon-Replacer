@@ -35,9 +35,8 @@ func loadApps() -> [AppProfile] {
         var apps = decoder.first?._items {
             apps = apps
                 .filter{$0.path.contains("/Applications/")||$0.path.contains("/System/Applications/")}
-            print(apps.count)
             apps.forEach{app in app.iconPath = findIconPath(app: app)}
-        return apps
+        return apps.filter{$0.iconPath != ""}
         
     }
     return []
@@ -47,7 +46,6 @@ func findIconPath(app: AppProfile) -> String {
     let infoSuffix = "/Contents/Info.plist"
     let path = app.path
     let iconPrefix = path + "/Contents/Resources/"
-    print(app._name)
     let url = URL(fileURLWithPath: (path + infoSuffix))
     if
         let data = try? Data(contentsOf: url),
@@ -59,7 +57,13 @@ func findIconPath(app: AppProfile) -> String {
         let data = try? Data(contentsOf: url),
         let iconFile = try? PropertyListDecoder().decode(IconPath.self, from: data).CFBundleIconFile
         {
-        return iconPrefix + iconFile
+        if iconFile.hasSuffix(".icns") {
+            return iconPrefix + iconFile
+        }
+        else {
+            return iconPrefix + iconFile + ".icns"
+        }
+        
     }
     else{
         return ""
