@@ -7,8 +7,7 @@
 
 import Foundation
 import SwiftUI
-import ImageIO
 
-let appFolder = Bundle.main.resourceURL
+let appData = loadApps()
 
 

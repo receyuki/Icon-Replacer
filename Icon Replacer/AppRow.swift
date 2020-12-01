@@ -6,17 +6,25 @@
 //
 
 import SwiftUI
+import Cocoa
 
 struct AppRow: View {
-//    var app: App
+    var app: AppProfile
     
     var body: some View {
         HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
-            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
-        VStack(alignment: .leading) {
-            Text(path().absoluteString)
+            Image(nsImage: NSImage(byReferencing: URL(fileURLWithPath: app.iconPath!)))
+                .resizable()
+                .aspectRatio(1.0, contentMode: .fit)
+                .frame(width: 32, height: 32)
+                .fixedSize(horizontal: true, vertical: false)
+                .cornerRadius(4.0)
             
-            Text("test")
+        VStack(alignment: .leading) {
+            Text(app._name)
+                .fontWeight(.bold)
+                .truncationMode(.tail)
+                .frame(minWidth: 20)
         }
         }
 
@@ -39,6 +47,6 @@ struct AppRow: View {
 
 struct AppRow_Previews: PreviewProvider {
     static var previews: some View {
-        AppRow()
+        AppRow(app:appData[0])
     }
 }

@@ -11,17 +11,10 @@ struct AppList: View {
 
     
     var body: some View{
-        List() {
-            AppRow()
-            AppRow()
-            AppRow()
-            AppRow()
-            AppRow()
-            AppRow()
-            AppRow()
-            AppRow()
-            AppRow()
-            AppRow()
+
+        List(appData) {app in
+                AppRow(app: app)
+            
         }.frame(minWidth: 300)
     }
 }
