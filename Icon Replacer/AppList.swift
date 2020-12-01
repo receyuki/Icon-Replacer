@@ -15,7 +15,7 @@ struct AppList: View {
             ForEach(appData) { app in
                 AppRow(app: app).tag(app)
             
-            }.frame(minWidth: 300).listStyle(SidebarListStyle())
+            }.frame(minWidth: 100).listStyle(SidebarListStyle())
         }
     }
     

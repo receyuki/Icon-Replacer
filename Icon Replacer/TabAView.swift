@@ -14,7 +14,7 @@ struct TabAView: View {
         NavigationView() {
             AppList(selectedApp: $selectedApp)
             if selectedApp != nil {
-                AppDetail()
+                AppDetail(app: selectedApp!)
             }
         }
             

@@ -11,8 +11,7 @@ struct TabBView: View {
     @State private var text = "B"
     var body: some View {
         VStack {
-            Text("Tab B")
-            TextField("Enter", text: $text)
+            Text("Nothing Here")
         }
     }
 }
