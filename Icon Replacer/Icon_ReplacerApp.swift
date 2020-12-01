@@ -21,14 +21,5 @@ struct Icon_ReplacerApp: App {
         let url = urlForDocument[0] as URL
         print(url)
     }
-//    static func main() -> Void{
-//        do {
-//            let userApplicationDirectory = try FileManager.default.url(for: .applicationDirectory,
-//                                                                        in: .userDomainMask,
-//                                                            appropriateFor: nil,
-//                                                                    create: true)
-//            print(userApplicationDirectory)
-//        } catch { print(error)}
-//    }
     
 }

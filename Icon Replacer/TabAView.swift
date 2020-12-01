@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct TabAView: View {
+    @State private var selectedApp: AppProfile?
     var body: some View {
         
-        HStack(spacing: 0) {
-            AppList()
-            AppDetail()
+        NavigationView() {
+            AppList(selectedApp: $selectedApp)
+            if selectedApp != nil {
+                AppDetail()
             }
+        }
             
         .background(Color(.sRGB, white: 0.1, opacity: 1))
     }

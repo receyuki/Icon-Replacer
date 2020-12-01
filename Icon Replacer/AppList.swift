@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct AppList: View {
-
+    @Binding var selectedApp: AppProfile?
     
     var body: some View{
-
-        List(appData) {app in
-                AppRow(app: app)
+        List(selection: $selectedApp) {
+            ForEach(appData) { app in
+                AppRow(app: app).tag(app)
             
-        }.frame(minWidth: 300)
+            }.frame(minWidth: 300).listStyle(SidebarListStyle())
+        }
     }
+    
 }
 
 struct AppList_Previews: PreviewProvider {
     static var previews: some View {
-        AppList()
+        AppList(selectedApp: .constant(appData[0]))
     }
 }
 

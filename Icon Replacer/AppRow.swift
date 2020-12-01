@@ -20,30 +20,16 @@ struct AppRow: View {
                 .fixedSize(horizontal: true, vertical: false)
                 .cornerRadius(4.0)
             
-        VStack(alignment: .leading) {
-            Text(app._name)
-                .fontWeight(.bold)
-                .truncationMode(.tail)
-                .frame(minWidth: 20)
+            VStack(alignment: .leading) {
+                Text(app._name)
+                    .fontWeight(.bold)
+                    .truncationMode(.tail)
+                    .frame(minWidth: 20)
+            }
+            Spacer()
         }
-        }
-
     }
 }
-
-    func path() -> URL{
-        do {
-            let userApplicationDirectory = try FileManager.default.url(for: .applicationDirectory,
-                                                                        in: .userDomainMask,
-                                                            appropriateFor: nil,
-                                                                    create: true)
-            print(userApplicationDirectory)
-            return userApplicationDirectory
-        } catch {
-            print(error)
-            return URL(string: "nil")!
-        }
-    }
 
 struct AppRow_Previews: PreviewProvider {
     static var previews: some View {

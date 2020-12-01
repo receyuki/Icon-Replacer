@@ -8,15 +8,17 @@
 import Foundation
 import SwiftUI
 
-class AppProfile: Codable, Identifiable {
+class AppProfile: Codable, Identifiable, Hashable {
     let _name: String
     let path: String
     let version: String?
     var iconPath : String?
+    static func == (lhs: AppProfile, rhs: AppProfile) -> Bool {
+        return lhs._name == rhs._name && lhs.path == rhs.path
+    }
+    func hash(into hasher: inout Hasher) {
+          hasher.combine(_name)
+          hasher.combine(path)
+    }
 }
 
-//extension AppProfile {
-//    var image: Image {
-//        loadIcon(app: <#T##AppProfile#>)
-//    }
-//}
