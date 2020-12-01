@@ -36,6 +36,7 @@ func loadApps() -> [AppProfile] {
         apps = apps
             .filter({$0.path.hasPrefix("/Applications/")||$0.path.hasPrefix("/System/Applications/")})
         apps.forEach{app in app.iconPath = findIconPath(app: app)}
+        apps.forEach{app in app.bundleName = readBundleName(app: app)}
         return apps.filter{$0.iconPath != ""}
         
     }
@@ -79,6 +80,21 @@ func findIconPath(app: AppProfile) -> String {
         }
     return ""
 }
+
+
+func readBundleName(app: AppProfile) -> String {
+    let infoSuffix = "/Contents/Info.plist"
+    let path = app.path
+    let url = URL(fileURLWithPath: (path + infoSuffix))
+    if
+        let data = try? Data(contentsOf: url),
+        let bundleName = try? PropertyListDecoder().decode(IconPath.self, from: data).CFBundleName
+        {
+            return bundleName
+        }
+    return ""
+}
+
 
 func isExist(path: String) -> Bool {
     let fileManager = FileManager.default

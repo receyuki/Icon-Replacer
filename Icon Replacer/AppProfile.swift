@@ -13,6 +13,7 @@ class AppProfile: Codable, Identifiable, Hashable {
     let path: String
     let version: String?
     var iconPath : String?
+    var bundleName : String?
     static func == (lhs: AppProfile, rhs: AppProfile) -> Bool {
         return lhs._name == rhs._name && lhs.path == rhs.path
     }
