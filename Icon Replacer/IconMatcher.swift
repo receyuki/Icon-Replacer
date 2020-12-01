@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
-var iconList = fetchIconList()
+var iconNameList = fetchIconNameList()
 
-func fetchIconList() -> [String]? {
+func fetchIconNameList() -> [String]? {
     if let url = URL(string:"https://raw.githubusercontent.com/elrumo/macOS_Big_Sur_icons_replacements/master/icns.txt") {
         if let textFile = try? String(contentsOf: url){
             var iconList = textFile.components(separatedBy: ",\n")
@@ -22,9 +23,11 @@ func fetchIconList() -> [String]? {
 
 func matchIcon(app: AppProfile) -> [String]? {
     var iconMached: Set<String> = []
-    let appKeyWords: Set<String> = Set( app._name.components(separatedBy: " ") + (app.bundleName?.components(separatedBy: " "))!)
+    let appKeyWords: Set<String> = Set((app._name.components(separatedBy: " ") + (app.bundleName?.components(separatedBy: " "))!).filter{word in
+        word != "Microsoft" && word != "Adobe" && word != "Google"
+    })
     
-    for icon in iconList ?? [] {
+    for icon in iconNameList ?? [] {
         let iconKeyWords = icon.components(separatedBy: "_")
         for appKeyWord in appKeyWords.map({$0.lowercased()}) {
             if iconKeyWords.map({$0.lowercased()}).contains(appKeyWord) {
@@ -39,8 +42,11 @@ func matchIcon(app: AppProfile) -> [String]? {
     return iconMachedArray
 }
 
-func getIconUrl(iconName: String) -> URL {
-    let iconPrefix = "https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/icons/"
-    let iconSuffix = ".icns"
-    return URL(string: iconPrefix + iconName + iconSuffix )!
+func getIconList(iconNameList: [String]) -> [IconProfile] {
+    var iconList = [IconProfile]()
+    for icon in iconNameList {
+        let iconProfile = IconProfile(name: icon)
+        iconList.append(iconProfile)
+    }
+    return iconList
 }

@@ -18,7 +18,6 @@ struct TabAView: View {
             }
         }
             
-        .background(Color(.sRGB, white: 0.1, opacity: 1))
     }
 }
 

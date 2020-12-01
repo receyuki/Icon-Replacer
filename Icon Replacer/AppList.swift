@@ -17,6 +17,7 @@ struct AppList: View {
             
             }.frame(minWidth: 100).listStyle(SidebarListStyle())
         }
+        .padding([.leading, .bottom])
     }
     
 }

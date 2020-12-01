@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct IconList: View {
+    @Binding var selectedIcon: IconProfile?
+    var selectedApp: AppProfile
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(selection: $selectedIcon) {
+            ForEach(getIconList(iconNameList: matchIcon(app: selectedApp)!)) { icon in
+                IconColumn(icon: icon).tag(icon)
+            }.frame(minHeight: 30)
+        }
     }
 }
 
-struct IconList_Previews: PreviewProvider {
-    static var previews: some View {
-        IconList()
-    }
-}
+
+//struct IconList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        IconList()
+//    }
+//}
