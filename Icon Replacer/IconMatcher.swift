@@ -48,5 +48,27 @@ func getIconList(iconNameList: [String]) -> [IconProfile] {
         let iconProfile = IconProfile(name: icon)
         iconList.append(iconProfile)
     }
+    
     return iconList
+}
+
+func downloadIconList(iconList: [IconProfile]) {
+    let fileManager = FileManager.default
+    let appSupportURL = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
+    let iconFolder = appSupportURL.appendingPathComponent("com.receyuki.Icon-Replacer/icons")
+    for icon in iconList {
+        if !isExist(path: iconFolder.path) {
+            do {
+                try fileManager.createDirectory (at: iconFolder, withIntermediateDirectories: true, attributes: nil)
+            }
+            catch {
+                print("Unable to create icons folder")
+            }
+        }
+        if !isExist(path: icon.url!.path){
+            FileDownloader.loadFileSync(url: icon.url!, dst: iconFolder){ (path, error) in
+                print("Icon downloaded to : \(path!)")
+            }
+        }
+    }
 }

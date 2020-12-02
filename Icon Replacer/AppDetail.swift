@@ -44,7 +44,7 @@ struct AppDetail: View {
             
             Divider()
             HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
-                VStack(alignment: .leading, spacing: 30) {
+                VStack(alignment: .leading, spacing: 5) {
                     VStack(alignment: .leading) {
                         Text(app._name)
                             .font(.title)
@@ -58,10 +58,14 @@ struct AppDetail: View {
                         Text("Bundle Name:")
                         Text(app.bundleName ?? "N/A")
                     }
-                }.frame(maxWidth: 200)
+                    Spacer()
+                }
+                Spacer()
+                VStack{
                 IconList(selectedIcon: $selectedIcon, selectedApp: app).padding(.trailing)
+                }
             }
-            .padding(.bottom)
+            
             
         }
         .offset(x: 10, y: 10)

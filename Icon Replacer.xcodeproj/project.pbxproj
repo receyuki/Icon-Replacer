@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,8 +25,9 @@
 		12BD1E0F257539C600CD8627 /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E0E257539C600CD8627 /* AppList.swift */; };
 		12BD1E1425753A0000CD8627 /* AppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E1325753A0000CD8627 /* AppRow.swift */; };
 		12BD1E1925753A5F00CD8627 /* AppProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E1825753A5F00CD8627 /* AppProfile.swift */; };
-		12BD1E1E25753F3C00CD8627 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E1D25753F3C00CD8627 /* AppData.swift */; };
+		12BD1E1E25753F3C00CD8627 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E1D25753F3C00CD8627 /* Data.swift */; };
 		12BD1E2625754C5100CD8627 /* AppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E2525754C5100CD8627 /* AppDetail.swift */; };
+		12EE264A25782DFC00CF52B6 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 12EE264925782DFC00CF52B6 /* ActivityIndicatorView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,7 @@
 		12BD1E0E257539C600CD8627 /* AppList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppList.swift; sourceTree = "<group>"; };
 		12BD1E1325753A0000CD8627 /* AppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRow.swift; sourceTree = "<group>"; };
 		12BD1E1825753A5F00CD8627 /* AppProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProfile.swift; sourceTree = "<group>"; };
-		12BD1E1D25753F3C00CD8627 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		12BD1E1D25753F3C00CD8627 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		12BD1E2525754C5100CD8627 /* AppDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12EE264A25782DFC00CF52B6 /* ActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +140,7 @@
 				1243291725740733007DF90B /* Preview Content */,
 				12BD1E1825753A5F00CD8627 /* AppProfile.swift */,
 				121A50182576A7C60091F978 /* IconProfile.swift */,
-				12BD1E1D25753F3C00CD8627 /* AppData.swift */,
+				12BD1E1D25753F3C00CD8627 /* Data.swift */,
 				121A4FFB257582C50091F978 /* AppLoader.swift */,
 				121A500E2576A22B0091F978 /* IconList.swift */,
 				121A50132576A2580091F978 /* IconColumn.swift */,
@@ -190,6 +192,9 @@
 			dependencies = (
 			);
 			name = "Icon Replacer";
+			packageProductDependencies = (
+				12EE264925782DFC00CF52B6 /* ActivityIndicatorView */,
+			);
 			productName = "Icon Replacer";
 			productReference = 1243290E25740731007DF90B /* Icon Replacer.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +266,9 @@
 				Base,
 			);
 			mainGroup = 1243290525740731007DF90B;
+			packageReferences = (
+				12EE264825782DFC00CF52B6 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+			);
 			productRefGroup = 1243290F25740731007DF90B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,7 +316,7 @@
 				12BD1E1425753A0000CD8627 /* AppRow.swift in Sources */,
 				1243291425740731007DF90B /* ContentView.swift in Sources */,
 				12BD1E0A2575395C00CD8627 /* TabBView.swift in Sources */,
-				12BD1E1E25753F3C00CD8627 /* AppData.swift in Sources */,
+				12BD1E1E25753F3C00CD8627 /* Data.swift in Sources */,
 				121A500A25768B8F0091F978 /* IconMatcher.swift in Sources */,
 				1243291225740731007DF90B /* Icon_ReplacerApp.swift in Sources */,
 				121A50192576A7C60091F978 /* IconProfile.swift in Sources */,
@@ -479,6 +487,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Icon Replacer/Preview Content\"";
 				DEVELOPMENT_TEAM = KD7HMJNUVE;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -489,7 +498,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = "0.5 Alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-Replacer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -505,6 +514,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Icon Replacer/Preview Content\"";
 				DEVELOPMENT_TEAM = KD7HMJNUVE;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -515,7 +525,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = "0.5 Alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-Replacer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -646,6 +656,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12EE264825782DFC00CF52B6 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12EE264925782DFC00CF52B6 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12EE264825782DFC00CF52B6 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1243290625740731007DF90B /* Project object */;
 }
