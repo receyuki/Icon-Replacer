@@ -15,3 +15,4 @@ func replaceIcon(app:AppProfile, icon:IconProfile) {
     let desUrl = NSHomeDirectory()+"/Downloads/"+fileName
     try! fileManager.copyItem(atPath: srcUrl, toPath: desUrl)
 }
+

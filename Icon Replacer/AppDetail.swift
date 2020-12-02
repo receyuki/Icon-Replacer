@@ -55,8 +55,9 @@ struct AppDetail: View {
                         Text(app.bundleName ?? "N/A")
                     }
                 }.frame(maxWidth: 200)
-                IconList(selectedIcon: $selectedIcon, selectedApp: app).padding(.trailing, 20)
-            }.padding(.bottom, 20)
+                IconList(selectedIcon: $selectedIcon, selectedApp: app).padding(.trailing)
+            }
+            .padding(.bottom)
             
         }.offset(x: 10, y: 10)
 

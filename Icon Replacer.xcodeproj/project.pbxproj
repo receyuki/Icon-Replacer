@@ -19,6 +19,7 @@
 		1243291925740733007DF90B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1243291825740733007DF90B /* Preview Assets.xcassets */; };
 		1243292525740733007DF90B /* Icon_ReplacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243292425740733007DF90B /* Icon_ReplacerTests.swift */; };
 		1243293025740733007DF90B /* Icon_ReplacerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1243292F25740733007DF90B /* Icon_ReplacerUITests.swift */; };
+		1254FF282576FD0800CCA826 /* FileDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254FF272576FD0800CCA826 /* FileDownloader.swift */; };
 		12BD1E052575392300CD8627 /* TabAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E042575392300CD8627 /* TabAView.swift */; };
 		12BD1E0A2575395C00CD8627 /* TabBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E092575395C00CD8627 /* TabBView.swift */; };
 		12BD1E0F257539C600CD8627 /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD1E0E257539C600CD8627 /* AppList.swift */; };
@@ -65,6 +66,7 @@
 		1243292B25740733007DF90B /* Icon ReplacerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Icon ReplacerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1243292F25740733007DF90B /* Icon_ReplacerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon_ReplacerUITests.swift; sourceTree = "<group>"; };
 		1243293125740733007DF90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1254FF272576FD0800CCA826 /* FileDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloader.swift; sourceTree = "<group>"; };
 		12BD1E042575392300CD8627 /* TabAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAView.swift; sourceTree = "<group>"; };
 		12BD1E092575395C00CD8627 /* TabBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBView.swift; sourceTree = "<group>"; };
 		12BD1E0E257539C600CD8627 /* AppList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppList.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				121A500E2576A22B0091F978 /* IconList.swift */,
 				121A50132576A2580091F978 /* IconColumn.swift */,
 				121A501D2576C7C60091F978 /* ReplaceIcon.swift */,
+				1254FF272576FD0800CCA826 /* FileDownloader.swift */,
 			);
 			path = "Icon Replacer";
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				12BD1E1925753A5F00CD8627 /* AppProfile.swift in Sources */,
 				121A4FFC257582C50091F978 /* AppLoader.swift in Sources */,
 				121A500F2576A22B0091F978 /* IconList.swift in Sources */,
+				1254FF282576FD0800CCA826 /* FileDownloader.swift in Sources */,
 				12BD1E052575392300CD8627 /* TabAView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-Replacer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -510,6 +515,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.receyuki.Icon-Replacer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
