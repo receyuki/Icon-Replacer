@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 
-let appData = loadApps()
+var appData = loadApps().sorted{
+    $0._name<$1._name
+}
 
 

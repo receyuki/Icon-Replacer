@@ -13,7 +13,9 @@ struct IconList: View {
     
     var body: some View {
         List(selection: $selectedIcon) {
-            ForEach(getIconList(iconNameList: matchIcon(app: selectedApp)!)) { icon in
+            ForEach(getIconList(iconNameList: matchIcon(app: selectedApp)!)
+                        .sorted{$0.name<$1.name})
+            { icon in
                 IconColumn(icon: icon).tag(icon)
             }.frame(minHeight: 30)
         }

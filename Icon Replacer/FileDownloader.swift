@@ -9,11 +9,9 @@ import Foundation
 
 class FileDownloader {
 
-    static func loadFileSync(url: URL, completion: @escaping (String?, Error?) -> Void)
+    static func loadFileSync(url: URL, dst: URL, completion: @escaping (String?, Error?) -> Void)
     {
-        let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-
-        let destinationUrl = documentsUrl.appendingPathComponent(url.lastPathComponent)
+        let destinationUrl = dst.appendingPathComponent(url.lastPathComponent)
 
         if FileManager().fileExists(atPath: destinationUrl.path)
         {
@@ -41,11 +39,9 @@ class FileDownloader {
         }
     }
 
-    static func loadFileAsync(url: URL, completion: @escaping (String?, Error?) -> Void)
+    static func loadFileAsync(url: URL, dst: URL, completion: @escaping (String?, Error?) -> Void)
     {
-        let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-
-        let destinationUrl = documentsUrl.appendingPathComponent(url.lastPathComponent)
+        let destinationUrl = dst.appendingPathComponent(url.lastPathComponent)
 
         if FileManager().fileExists(atPath: destinationUrl.path)
         {

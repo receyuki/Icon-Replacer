@@ -12,9 +12,18 @@ struct TabAView: View {
     var body: some View {
         
         NavigationView() {
+            VStack{
+                Button(action:{
+                    appData = loadApps()
+                }){
+                        Image(systemName: "goforward")
+                            .font(.system(size: 16, weight: .heavy))
+                }.buttonStyle(PlainButtonStyle())
+                
             AppList(selectedApp: $selectedApp)
+            }
             if selectedApp != nil {
-                AppDetail(app: selectedApp!)
+                AppDetail(appIcon: Image(nsImage: NSImage(byReferencing: URL(fileURLWithPath: selectedApp!.iconPath!))), app: selectedApp!)
             }
         }
             
