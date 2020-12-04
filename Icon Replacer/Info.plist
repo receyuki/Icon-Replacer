@@ -22,5 +22,11 @@
 	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>SUFeedURL</key>
+	<string>https://receyuki.com/IconReplacer/appcast.xml</string>
+	<key>SUEnableAutomaticChecks</key>
+	<string>YES</string>
+	<key>SUPublicEDKey</key>
+	<string>7POWYU701HM79pUUBxgdxD+WeM1jcal2ftRGq9bOFZg=</string>
 </dict>
 </plist>

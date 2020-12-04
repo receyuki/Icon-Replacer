@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Sparkle
 
 @main
 struct Icon_ReplacerApp: App {
@@ -20,6 +21,12 @@ struct Icon_ReplacerApp: App {
         let urlForDocument = manager.urls(for: .documentDirectory, in:.userDomainMask)
         let url = urlForDocument[0] as URL
         print(url)
+    }
+    
+    func checkForUpdates(_ sender: Any) {
+            let updater = SUUpdater.shared()
+            updater?.feedURL = URL(string: "https://receyuki.com/IconReplacer/appcast.xml")
+            updater?.checkForUpdates(self)
     }
     
 }
